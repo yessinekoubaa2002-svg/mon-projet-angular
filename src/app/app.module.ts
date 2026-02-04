@@ -3,14 +3,28 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { MemberComponent } from './member/member.component';
+import { MatTableModule } from '@angular/material/table';
+import {MatButtonModule} from '@angular/material/button';
+import {MatTooltipModule} from '@angular/material/tooltip';
+import {MatDividerModule} from '@angular/material/divider';
+import {MatIconModule} from '@angular/material/icon';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    MemberComponent
   ],
   imports: [
+    MatTableModule,
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MatButtonModule,
+    MatTooltipModule,
+    MatDividerModule, 
+    MatIconModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
