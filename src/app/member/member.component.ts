@@ -17,12 +17,17 @@ ngOnInit(): void {
     this.datasource=data;
   });
 }
-displayedColumns: string[] = ['id', 'cin', 'name','type', 'age','action'];
+displayedColumns: String[] = ['id', 'cin', 'name','type', 'age','action'];
 editMember(row:Member){
   console.log('edit member',row);
 }
-deleteMember(row:Member){
-  console.log('delete member',row);
+deleteMember(id:String){
+  this.MS.deleteMember(id).subscribe(()=>{
+    //apres la suppression on doit rafraichir la liste des membres
+    this.MS.getAllMembers().subscribe((data)=>{
+      this.datasource=data;
+    });
+  });
 }
 }
 

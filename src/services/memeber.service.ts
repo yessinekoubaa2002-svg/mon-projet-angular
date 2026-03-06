@@ -18,7 +18,7 @@ addMember(member:Member):Observable<void>{
 updateMember(member:Member):Observable<void>{
   return this.httpClient.put<void>(`http://localhost:3000/members/${member.id}`,member);  
 }
-deleteMember(id:string):Observable<void>{
+deleteMember(id:String):Observable<void>{
   return this.httpClient.delete<void>(`http://localhost:3000/members/${id}`);  
 }
 }

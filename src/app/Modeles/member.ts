@@ -1,8 +1,9 @@
 export interface Member {
-    id: string;
-    cin: string;
-    name: string;
-    type: string;
+    id: String;
+    cin: String;
+    name: String;
+    email: String;
+    type: String;
     age: number;
     
-}
+}           

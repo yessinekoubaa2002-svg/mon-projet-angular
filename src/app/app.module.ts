@@ -11,12 +11,15 @@ import {MatDividerModule} from '@angular/material/divider';
 import {MatIconModule} from '@angular/material/icon';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
-
-
+import { MemberFormComponent } from './member-form/member-form.component';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatInputModule} from '@angular/material/input';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent,
-    MemberComponent
+    MemberComponent,
+    MemberFormComponent
   ],
   imports: [
     MatTableModule,
@@ -27,7 +30,10 @@ import { HttpClientModule } from '@angular/common/http';
     MatDividerModule, 
     MatIconModule,
     BrowserAnimationsModule,
-    HttpClientModule
+    HttpClientModule,
+    MatFormFieldModule,
+    MatInputModule,
+    FormsModule ,ReactiveFormsModule
 
   ],
   providers: [],
