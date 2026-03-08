@@ -9,6 +9,11 @@ const routes: Routes = [
   component:MemberFormComponent
   },
   {
+    path:':id/edit',
+    component:MemberFormComponent
+
+  },
+  {
     path:'**',
     component:MemberComponent
   },

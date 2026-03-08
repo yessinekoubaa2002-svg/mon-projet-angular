@@ -21,4 +21,7 @@ updateMember(member:Member):Observable<void>{
 deleteMember(id:String):Observable<void>{
   return this.httpClient.delete<void>(`http://localhost:3000/members/${id}`);  
 }
+getMemberById(id:String):Observable<Member>{
+  return this.httpClient.get<Member>(`http://localhost:3000/members/${id}`);  
+}
 }

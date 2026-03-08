@@ -15,11 +15,20 @@ import { MemberFormComponent } from './member-form/member-form.component';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { ConfirmComponent } from './confirm/confirm.component';
+import {MatDialogModule} from '@angular/material/dialog';
+import { TemplateComponent } from './template/template.component';
+import {MatSidenavModule} from '@angular/material/sidenav';
+import {MatListModule} from '@angular/material/list';
+import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatMenuModule} from '@angular/material/menu';
 @NgModule({
   declarations: [
     AppComponent,
     MemberComponent,
-    MemberFormComponent
+    MemberFormComponent,
+    ConfirmComponent,
+    TemplateComponent
   ],
   imports: [
     MatTableModule,
@@ -33,7 +42,12 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     HttpClientModule,
     MatFormFieldModule,
     MatInputModule,
-    FormsModule ,ReactiveFormsModule
+    FormsModule ,ReactiveFormsModule,
+    MatDialogModule,
+    MatSidenavModule,
+    MatListModule,
+    MatToolbarModule,
+    MatMenuModule
 
   ],
   providers: [],

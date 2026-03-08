@@ -1,32 +1,52 @@
 {
   "members": [
     {
-      "id": "1",
       "cin": "1234",
       "name": "john",
       "type": "teacher",
-      "age": 23
+      "age": "24",
+      "email": "yess@yess.com",
+      "id": "1"
     },
     {
-      "id": "2",
       "cin": "5678",
       "name": "smith",
       "type": "student",
-      "age": 25
+      "age": "25",
+      "email": "so@so.com",
+      "id": "2"
     },
     {
-      "id": "3",
       "cin": "9012",
       "name": "jane",
       "type": "student",
-      "age": 22
+      "age": "26",
+      "email": "bi@bi.com",
+      "id": "3"
     },
     {
-      "id": "4",
       "cin": "3456",
       "name": "peter",
       "type": "teacher",
-      "age": 24
+      "age": "27",
+      "email": "omar@omar.com",
+      "id": "4"
+    },
+    {
+      "cin": "123456",
+      "name": "yess",
+      "type": "rouge",
+      "age": "28",
+      "email": "yess@yess.com",
+      "id": "a302"
+    },
+    {
+      "cin": "123456",
+      "name": "yess",
+      "type": "vert",
+      "age": "22",
+      "email": "yess@yess.com",
+      "id": "b75d"
     }
   ]
 }
